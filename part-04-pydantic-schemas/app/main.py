@@ -68,6 +68,8 @@ def create_recipe(*, recipe_in: RecipeCreate) -> dict:
     )
     RECIPES.append(recipe_entry.dict())
 
+    print(recipe_in.submitter_id)
+
     return recipe_entry
 
 
